@@ -3,12 +3,12 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Card from '../components/Card'
 import Coursel from '../components/Coursel'
-import { Height } from '@material-ui/icons'
-import { v4 as uuidv4 } from 'uuid';
+// import { Height } from '@material-ui/icons'
+// import { v4 as uuidv4 } from 'uuid';
 import "../App.css"
 
 export default function Home() {
-  const foodId = uuidv4();
+  // const foodId = uuidv4();
    const [foodCat,setfoodCat]=useState(undefined);
    const [foodItems,setfoodItems]=useState([]);
    const [search,setSearch]=useState("");

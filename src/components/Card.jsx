@@ -45,7 +45,7 @@ useEffect(()=>{
   return (
     <div>
       <div className="card mt-4" style={{ "width": "18rem", "maxHeight": "360px" }}>
-        <img src={props.foodItem.img} className="card-img-top" style={{ height: "150px", objectFit: "cover" }} alt="..." />
+        <img src={props.foodItem.img} className="card-img-top" style={{ height: "130px", objectFit: "cover",margin:'0' }} alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.foodItem.name}</h5>
           <div className="container w-100">
