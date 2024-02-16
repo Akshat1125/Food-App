@@ -21,10 +21,10 @@ function App() {
     <CartProvider>
     <Router>
       <Routes>
-    <Route exact path='/Food-App/swiggy-clone' element={<Home/>}></Route>
-    <Route exact path='/Food-App/swiggy-clone/login' element={<Login/>}></Route>
-      <Route exact path='/Food-App/swiggy-clone/createuser' element={<Signup/>}></Route>
-      <Route exact path='/Food-App/swiggy-clone/myOrder' element={<Myorder/>}></Route>
+    <Route exact path='/swiggy-clone' element={<Home/>}></Route>
+    <Route exact path='/swiggy-clone/login' element={<Login/>}></Route>
+      <Route exact path='/swiggy-clone/createuser' element={<Signup/>}></Route>
+      <Route exact path='/swiggy-clone/myOrder' element={<Myorder/>}></Route>
 
       </Routes>
     </Router>
