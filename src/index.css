@@ -1,0 +1,6 @@
+#caursol{
+    max-height: 500px;
+    object-fit: contain !important;
+    object-position: 50% 50% !important;
+    height:auto;
+}
