@@ -57,7 +57,7 @@ useEffect(()=>{
             <div className="d-inline h-100 fs-5">₹{finalPrice}/-</div>
           </div>
           <hr />
-          <div className='btn btn-primary justify-center ms-2' onClick={handleAddToCart}> Add to Cart</div>
+          <div className='btn btn-primary justify-center ms-2' onClick={(!localStorage.getItem("authToken")) ?alert('u must login to continue'):handleAddToCart}> Add to Cart</div>
         </div>
       </div>
     </div>
