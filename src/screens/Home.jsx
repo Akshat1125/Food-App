@@ -12,6 +12,7 @@ export default function Home() {
   const [foodCat, setfoodCat] = useState(undefined);
   const [foodItems, setfoodItems] = useState([]);
   const [search, setSearch] = useState("");
+  const ph =[1,2,3,4,5,6,7,8]
 
   const loadData = async () => {
     let response = await fetch("https://food-app-backend-2ds1.onrender.com/api/foodData", {
@@ -55,12 +56,13 @@ export default function Home() {
               </div>
             )
           })
-            :<div className='text-center fs-3'>
-              <div className="card">
+            :
+            ph.map(()=>{return(<div className="card">
+            <img src='' alt="" />
 
-                <button disabled>Click Me</button>
-              </div>
-            </div>
+              <button disabled className='bg-primary'>Click Me</button>
+          </div>)})
+
         }
       </div>
       <Footer />
