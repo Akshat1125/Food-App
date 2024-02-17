@@ -38,7 +38,7 @@ export default function Coursel() {
       <img src="https://source.unsplash.com/random/900x700/?burger" className="d-block w-100" alt="..."/>
     </div>
     <div className="carousel-item" data-bs-interval="500">
-      <img src="https://source.unsplash.com/random/900x700/?ice-cream" className="d-block w-100" alt="..."/>
+      <img src="https://source.unsplash.com/random/900x700/?ice-cream" className=" object-fit-cover w-100" alt="..."/>
     </div>
     <div className="carousel-item">
       <img src="https://source.unsplash.com/random/900x700/?pizza" className="d-block w-100" alt="..."/>
