@@ -19,7 +19,7 @@ export default function Login() {
       alert("enter valid credit")
     }
     if (json.success) {
-      navigate('/');
+      navigate('/swiggy-clone');
       localStorage.setItem("authToken",json.authToken)
       localStorage.setItem("email",json.email)
 
@@ -47,7 +47,7 @@ export default function Login() {
     <input type="password" className="form-control" id="exampleInputPassword1" name='password' value={credentials.password} onChange={onChange}/>
   </div>
    <button type="submit" className="btn btn-primary">Submit</button>
-<Link to="/createuser" className='m-3 btn btn-danger'>I'm a new User</Link>
+<Link to="/swiggy-clone/createuser" className='m-3 btn btn-danger'>I'm a new User</Link>
 </form>
 </div>
     </>

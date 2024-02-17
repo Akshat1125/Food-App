@@ -56,7 +56,7 @@ export default function Signup() {
     <input type="text" className="form-control" id="Address" name='geoLocation' value={credentials.geoLocation} onChange={onChange}/>
   </div>
   <button type="submit" className="btn btn-primary">Submit</button>
-<Link to="/login" className='m-3 btn btn-danger'>Already a User</Link>
+<Link to="/swiggy-clone/login" className='m-3 btn btn-danger'>Already a User</Link>
 </form>
 </div>
     </>

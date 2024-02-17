@@ -13,7 +13,7 @@ const loadCart = () => {
  const navigate = useNavigate();
 const handleLogout =()=>{
   localStorage.removeItem("authToken")
-  navigate("/login")
+  navigate("/swiggy-clone/login")
 }
 
   return (<>

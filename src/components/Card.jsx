@@ -12,6 +12,8 @@ export default function Card(props) {
   const dispatch = UseDispatchCart();
 
   const handleAddToCart = async () => {
+    if(!localStorage.getItem("authToken"))alert('u need to login first')
+    else{
       let food = []
       for (const item of data) {
         if (item.id === foodItem._id) {
@@ -27,7 +29,7 @@ export default function Card(props) {
         }
         else if (food.size !== size) {
           await dispatch({ type: "ADD", id: foodItem._id, name: foodItem.name, price: finalPrice, qty: qty, size: size,img: props.ImgSrc })
-          console.log("Size different so simply ADD one more to the list")
+          // console.log("Size different so simply ADD one more to the list")
           return
         }
         return
@@ -35,7 +37,7 @@ export default function Card(props) {
 
       await dispatch({ type: "ADD", id: foodItem._id, name: foodItem.name, price: finalPrice, qty: qty, size: size })
 
-    }
+    }}
 
 let finalPrice = qty* parseInt(options[size]);
 useEffect(()=>{
@@ -57,7 +59,7 @@ useEffect(()=>{
             <div className="d-inline h-100 fs-5">₹{finalPrice}/-</div>
           </div>
           <hr />
-          <div className='btn btn-primary justify-center ms-2' onClick={(!localStorage.getItem("authToken")) ?alert('u must login to continue'):handleAddToCart}> Add to Cart</div>
+          <div className='btn btn-primary justify-center ms-2' onClick={handleAddToCart}> Add to Cart</div>
         </div>
       </div>
     </div>
