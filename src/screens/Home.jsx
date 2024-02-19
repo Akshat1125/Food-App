@@ -33,10 +33,11 @@ export default function Home() {
 
 
   return (
-    <><Header />
+    <>{(!foodCat)?<>
+    <Header />
       <Coursel />
       <input className="form-control me-2 text-center" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
-      <div className='container'>
+      <d className='container'>
         {
           (foodCat) ? foodCat.map((data) => {
             return (
@@ -56,16 +57,20 @@ export default function Home() {
               </div>
             )
           })
-            :
+            : <div style={{ display: "flex", justifyContent: "center" }}>{
             ph.map(()=>{return(<div className="card">
             <img src='' alt="" />
 
               <button disabled className='bg-primary'>Click Me</button>
-          </div>)})
-
+          </div>)})}
+          </div>
         }
+      </d>
+      <Footer /></>:
+      <div style={{ display:'grid',placeItems:'center',  height:'100vh',width:'100vw' }}>
+        <h1 style={{margin:'auto',color:'red'}}>Fooding</h1>
       </div>
-      <Footer />
+      }
     </>
   )
 }
