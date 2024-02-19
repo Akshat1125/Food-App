@@ -33,7 +33,7 @@ export default function Home() {
 
 
   return (
-    <>{(!foodCat)?<>
+    <>{(foodCat)?<>
     <Header />
       <Coursel />
       <input className="form-control me-2 text-center" type="search" placeholder="Search" aria-label="Search" value={search} onChange={(e) => { setSearch(e.target.value) }} />
