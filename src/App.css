@@ -1,8 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
 font-family: 'Delicious Handrawn', cursive;
 font-family: 'Edu NSW ACT Foundation', cursive;
 font-family: 'Fasthand', cursive;
 font-family: 'Rubik', sans-serif;
+margin: 0;
+padding: 0;
+overflow-x:hidden
 }
 .card {
     width: 300px;
